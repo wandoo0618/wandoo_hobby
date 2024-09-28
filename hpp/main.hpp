@@ -17,7 +17,7 @@ const char mac[] = "clear";
 //24년도 4대보험 요율
 const double gookmin_per = 0.045; //국민연금
 const double gungang_per = 0.03545; //건강보험
-const double janggi_per = gungang_per * 0.1295; // 장기요양보험
+const double janggi_per = 0.1295; // 장기요양보험
 const double goyoung_per = 0.009; // 고용보험
 
 class about_insurance;
