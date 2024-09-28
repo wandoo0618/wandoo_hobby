@@ -10,6 +10,7 @@ class about_insurance
 			ex,
 			select1,
 			select2,
+			select3,
 		};
 		struct insurance
 		{

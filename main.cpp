@@ -1,7 +1,6 @@
 #include "hpp/main.hpp"
 using namespace std;
 
-
 about_main::about_main()
 {
 	insurance = new about_insurance();
@@ -51,6 +50,8 @@ int main(void)
 		{
 			if (main.insurance->insurance_main() == 1)
 				continue;
+			else
+				return (0);
 		}
 		else if (main.select == main.exit)
 		{
