@@ -3,6 +3,7 @@ SRCS =  main.cpp\
         4insurance/4insurance.cpp\
         4insurance/select1.cpp\
         4insurance/select2.cpp\
+		4insurance/revers_caculater.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 NAME = wandoo_emule

@@ -40,11 +40,12 @@ void about_insurance::caculater(insurance_24 &i, insurance &result)
 static void show_menu_print(void)
 {
 	cout << "해당 계산기는 근로자용 입니다.\n\n" << endl;
-	cout << "[[[24년 4대보험 요율]]]\n 국민연금 : 4.5%\n 건강보험 : 3.545%\n 장기요양보험 : 건강보험의 12.95%\n 고용보험 : 0.9%" << endl;
-	cout << "\n\n" << endl;
+	// cout << "[[[24년 4대보험 요율]]]\n 국민연금 : 4.5%\n 건강보험 : 3.545%\n 장기요양보험 : 건강보험의 12.95%\n 고용보험 : 0.9%" << endl;
+	// cout << "\n\n" << endl;
 	cout << "원하는 기능을 선택해주세요\n" << endl;
 	cout << "1번, 2024년도 요율적용 계산기" << endl;
 	cout << "2번, 각 보험요율 직접입력 전용 계산기" << endl;
+	cout << "3번, 테스트" << endl;
 	cout << "5번, 프로그램 종료" << endl;
 	cout << "0번, 뒤로가기" << endl;
 }
@@ -69,10 +70,15 @@ int about_insurance::insurance_main(void)
 			if (select2_insurance() == 1)
 				return (1);
 		}
+		else if (select_insurance == select3)
+		{
+			tester();
+		}
 		else if (select_insurance == select5)
 		{
 			cout << "2초후 종료됩니다." << endl;
 			this_thread::sleep_for(chrono::milliseconds(2000));
+			exit(0);
 		}
 	}
 }

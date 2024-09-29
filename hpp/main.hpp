@@ -6,6 +6,7 @@
 # include <sstream>
 # include <cmath>
 # include <cstdlib>
+# include <iomanip>
 # include <thread>  // sleep_for 사용을 위한 라이브러리
 # include <chrono>  // 시간 단위를 위한 라이브러리
 
@@ -42,5 +43,6 @@ class about_main
 };
 
 void clear_all(void);
+int tester(void);
 
 #endif

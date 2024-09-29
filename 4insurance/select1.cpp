@@ -14,18 +14,16 @@ int about_insurance::select1_insurance(void)
 	insurance insur;
 	insurance_24 insur_24;
 
+	clear_all();
+	menu_print();
 	while (1)
 	{
-		clear_all();
-		menu_print();
 		cin >> all_money;
-
-		if (all_money <= 0 || all_money > 2147483647)
+		if (all_money <= 0 || all_money > 2100000000)
 		{
 			clear_all();
 			cout << "입력 금액 : " << all_money << "원 입니다." << endl;
-			cout << "범위가 잘못되었습니다. 다시 입력해주세요. [허용범위 1 ~ 백억]" << endl;
-			cin >> all_money;
+			cout << "범위가 잘못되었습니다. 다시 입력해주세요. [허용범위 1 ~ 21억]" << endl;
 			continue;
 		}
 		else

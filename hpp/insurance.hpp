@@ -11,6 +11,7 @@ class about_insurance
 			select1,
 			select2,
 			select3,
+			select4,
 			select5,
 		};
 		struct insurance
@@ -39,9 +40,9 @@ class about_insurance
 
 		int select1_insurance(void);
 		int select2_insurance(void);
+		int insur_init(insurance_24 &i);
 		void caculater(insurance_24 &i, insurance &result);
 		void show_print_all(insurance &insur);
-		void insur_init(insurance_24 &i);
 		void insur_caculater(insurance & result, insurance_24 &i);
 
 };
