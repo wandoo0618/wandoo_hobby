@@ -14,6 +14,7 @@
 
 const char win[] = "cls";
 const char mac[] = "clear";
+const char *os = mac; // os 버전
 
 //24년도 4대보험 요율
 const double gookmin_per = 0.045; //국민연금

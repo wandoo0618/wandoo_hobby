@@ -1,6 +1,8 @@
 # 디렉토리 제외
 /.vscode/
 
+.DS_Store
+
 # 특정 파일 제외
 #config.php
 #secrets.txt
