@@ -1,6 +1,8 @@
 #include "hpp/main.hpp"
 using namespace std;
 
+const char *os = mac;
+
 about_main::about_main()
 {
 	insurance = new about_insurance();
@@ -8,30 +10,7 @@ about_main::about_main()
 
 void clear_all(void)
 {
-	system(mac);
-}
-
-static void error_input(about_main &main, int count_p)
-{
-	int count = count_p;
-
-	clear_all();
-	cout << "번호를 잘못 누르셨습니다. 다시 입력해주세요." << endl;
-	cin >> main.select;
-	if (main.select >= 1 && main.select <= 5)
-		return ;
-	else if (count == 10)
-	{
-		clear_all();
-		cout << "장난 치지 마세요!, 2초뒤 프로그램을 종료합니다." << endl;
-		this_thread::sleep_for(chrono::milliseconds(2000));
-		exit(1);
-	}
-	else if (count < 10)
-	{
-		cout << "check " << count_p << endl;
-		error_input(main, ++count);
-	}
+	system(os);
 }
 
 int main(void)
@@ -53,7 +32,7 @@ int main(void)
 			else
 				return (0);
 		}
-		else if (main.select == main.exit)
+		else if (main.select == main.ex)
 		{
 			cout << "2초 뒤 종료됩니다." << endl;
 			this_thread::sleep_for(chrono::milliseconds(2000));
@@ -61,7 +40,7 @@ int main(void)
 		}
 		else
 		{
-			error_input(main, 0);
+			//main.error_input(main, 0);
 			continue;
 		}
 	}

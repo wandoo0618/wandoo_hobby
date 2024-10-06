@@ -44,7 +44,7 @@ class about_insurance
 		void caculater(insurance_24 &i, insurance &result);
 		void show_print_all(insurance &insur);
 		void insur_caculater(insurance & result, insurance_24 &i);
-
+		int	 revers_caculater(void);
 };
 
 

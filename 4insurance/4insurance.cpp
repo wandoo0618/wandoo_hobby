@@ -72,7 +72,8 @@ int about_insurance::insurance_main(void)
 		}
 		else if (select_insurance == select3)
 		{
-			tester();
+			if (revers_caculater() == 1)
+				return (1);
 		}
 		else if (select_insurance == select5)
 		{

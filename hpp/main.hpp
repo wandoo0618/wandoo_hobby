@@ -14,7 +14,7 @@
 
 const char win[] = "cls";
 const char mac[] = "clear";
-const char *os = mac; // os 버전
+extern const char *os; // os 버전
 
 //24년도 4대보험 요율
 const double gookmin_per = 0.045; //국민연금
@@ -29,7 +29,7 @@ class about_main
 	public:
 		enum
 		{
-			exit,
+			ex,
 			select1,
 			select2,
 			end,
@@ -38,12 +38,13 @@ class about_main
 
 		about_insurance *insurance;
 
+		void error_input(about_main &main, int count_p);
 		about_main();
-		~about_main();	
+		~about_main();
+	private:
 
 };
 
 void clear_all(void);
-int tester(void);
 
 #endif
